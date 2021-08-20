@@ -1,7 +1,7 @@
 const host =
   process.env.REACT_APP_DEVENV === "1"
     ? "http://localhost:8081/gestion/api/v1"
-    : "";
+    : "/gestion/api/v1";
 
 const routes = [
   {
