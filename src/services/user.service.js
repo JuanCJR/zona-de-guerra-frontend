@@ -11,6 +11,7 @@ export const getUsuarios = async (token) => {
 
 //funcion para crear usuario
 export const postUsuario = async (usuario) => {
+  const token = sessionStorage.getItem("token");
   const result = await axios.post(
     getRoute("crea-usuario"),
     {
