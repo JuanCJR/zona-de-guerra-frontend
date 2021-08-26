@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { Button, Modal, Form, FloatingLabel } from "react-bootstrap";
 import { onChangeDefaultValue } from "../../lib/onChangeValue";
-import {postUsuario} from '../../services/user.service';
-export const CreateUserForm = () => {
+import { postUsuario } from "../../services/user.service";
+export const CreateUserForm = (props) => {
+  const { changePrincipalState, handlerRefresh } = props;
   const [validated, setValidated] = useState(false);
   const [show, setShow] = useState(false);
   const handleShow = () => setShow(true);
@@ -13,14 +14,41 @@ export const CreateUserForm = () => {
     email: "",
     passwd: "",
   });
-  const handleSubmit = (event) => {
+
+  const [postState, setPostState] = useState({
+    data: [],
+    code: 0,
+    message: "",
+  });
+
+  const handleSubmit = async (event) => {
     const form = event.currentTarget;
     if (form.checkValidity() === false) {
       event.preventDefault();
       event.stopPropagation();
-    }
+    } else {
+      event.preventDefault();
+      setValidated(true);
 
-    setValidated(true);
+      const postData = {
+        usuario: {
+          nom_usu: state.nom_usu,
+          passwd: state.passwd,
+          email: state.email,
+        },
+      };
+      const result = await postUsuario(postData);
+      //Modifica estado principal
+      changePrincipalState((state) => ({
+        ...state,
+        message: result.message,
+        code: result.code,
+        alertType: "create",
+      }));
+
+      await handlerRefresh();
+      handleClose();
+    }
   };
 
   return (
@@ -38,10 +66,7 @@ export const CreateUserForm = () => {
               className="mt-3"
               onChange={(e) => onChangeDefaultValue(e, "nom_usu", changeState)}
             >
-              <Form.Control
-                type="text"
-                required
-              />
+              <Form.Control type="text" required />
               <Form.Control.Feedback type="invalid">
                 Ingrese un nombre de usuario
               </Form.Control.Feedback>

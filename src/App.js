@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 import { Switch, Route } from "react-router-dom";
 import React, { Component } from "react";
 import { Home } from "./pages/Home";
@@ -23,7 +23,6 @@ export default class App extends Component {
           <Route path="/admin" component={Admin} />
           <Route path="/login" component={Login} />
           <Route path="/usuarios" component={Users} />
-
         </Switch>
       </div>
     );

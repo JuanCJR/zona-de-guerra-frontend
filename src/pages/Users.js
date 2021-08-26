@@ -6,7 +6,7 @@ import { getUsuarios } from "../services/user.service";
 import { useHistory } from "react-router-dom";
 import { OptionsResponseAlert } from "../components/alert/OptionsResponseAlert";
 import { UsuariosOptionsOffCanvas } from "../components/templateForm/UsuariosOptionsOffCanvas";
-import {CreateUserForm} from '../components/templateForm/CreateUserForm';
+import { CreateUserForm } from "../components/templateForm/CreateUserForm";
 export const Users = () => {
   const [state, changeState] = useState({
     message: "",
@@ -90,7 +90,10 @@ export const Users = () => {
               </tbody>
             </Table>
 
-           <CreateUserForm/>
+            <CreateUserForm
+              changePrincipalState={changeState}
+              handlerRefresh={handlerRefresh}
+            />
           </Col>
         </Row>
       </Container>

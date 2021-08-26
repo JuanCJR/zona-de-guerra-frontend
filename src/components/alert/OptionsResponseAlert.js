@@ -17,21 +17,14 @@ export const OptionsResponseAlert = (props) => {
 
   if (show && alertType !== "select") {
     if (code === 200) {
-      if (alertType === "update") {
+      if (alertType === "update" || alertType==="create" || alertType==="delete") {
         return (
           <Alert variant="success" onClose={() => setShow(false)} dismissible>
             <Alert.Heading>Ejecución exitosa!</Alert.Heading>
             <p>{message}</p>
           </Alert>
         );
-      } else if (alertType === "delete") {
-        return (
-          <Alert variant="warning" onClose={() => setShow(false)} dismissible>
-            <Alert.Heading>Ejecución exitosa!</Alert.Heading>
-            <p>{message}</p>
-          </Alert>
-        );
-      }
+      } 
     } else {
       return (
         <Alert variant="danger" onClose={() => setShow(false)} dismissible>
