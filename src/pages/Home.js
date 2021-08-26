@@ -22,10 +22,7 @@ export const Home = () => {
       </Carousel>
 
       <Container fluid>
-        <Row>
-          <Col></Col>
-        </Row>
-
+ 
         {/* informacion */}
         <Row className="mt-2 justify-content-md-center">
           {/* Columa 1 */}
