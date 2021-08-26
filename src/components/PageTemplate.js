@@ -45,15 +45,13 @@ export const PageTemplate = (props) => {
     <React.Fragment>
       {/** Header */}
       <header>
-        <Navbar>
+        <Container fluid>
+        <Navbar expand="lg">
           <Navbar.Brand className="mx-auto">
             Zona de Guerra Paintball
           </Navbar.Brand>
         </Navbar>
-        <Container fluid>
-          <Row>
-            <Col>
-              <Navbar>
+              <Navbar expand="lg">
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse>
                   <Nav className="mx-auto">
@@ -92,14 +90,16 @@ export const PageTemplate = (props) => {
                     <Nav.Link>
                       <img
                         className="me-2"
+                        width="30"
                         src="img/facebook.png"
                         alt="facebook icon"
                       />
                     </Nav.Link>
-                    <Nav.Link>
+                    <Nav.Link href="https://www.instagram.com/guerrapaintballjm/?hl=es" target="_blank">
                       <img
                         className="me-2"
-                        src="img/facebook.png"
+                        width="30"
+                        src="img/instagram.png"
                         alt="instagram icon"
                       />
                     </Nav.Link>
@@ -137,9 +137,7 @@ export const PageTemplate = (props) => {
                   <React.Fragment></React.Fragment>
                 )}
               </Navbar>
-            </Col>
-          </Row>
-        </Container>
+              </Container>
       </header>
       {/** Main */}
       <main>{props.children}</main>
