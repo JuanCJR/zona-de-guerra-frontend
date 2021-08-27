@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Navbar, Nav, Button, Container, Col, Row } from "react-bootstrap";
+import { Navbar, Nav, Button, Container, } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
 import { validaSesion } from "../services/user.service";
 
@@ -45,13 +45,14 @@ export const PageTemplate = (props) => {
     <React.Fragment>
       {/** Header */}
       <header>
-        <Container fluid>
-          <Navbar expand="lg">
-            <Navbar.Brand className="mx-auto">
-              Zona de Guerra Paintball
-            </Navbar.Brand>
+        <Container fluid className="p-0">
+          <Navbar expand="lg" className="bg-dark  text-white">
+              <img
+              className="banner mx-auto"
+              src="img/banner.jpg"
+              />
           </Navbar>
-          <Navbar expand="lg">
+          <Navbar expand="lg" bg="primary" variant="dark" className="bg-gradient" >
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse>
               <Nav className="mx-auto">
@@ -167,11 +168,10 @@ export const PageTemplate = (props) => {
       </footer> */}
       <footer class="container">
         <p class="float-end">
-          <a href="#">Back to top</a>
+          <a href="#">Ir al inicio</a>
         </p>
         <p>
-          © 2017–2021 Company, Inc. · <a href="#">Privacy</a> ·{" "}
-          <a href="#">Terms</a>
+          © 2021 Zona de Guerra Paintball · 
         </p>
       </footer>
     </React.Fragment>
