@@ -5,8 +5,7 @@ export const Home = () => {
   return (
     <PageTemplate>
       {/* Carrusel */}
-
-      <Carousel className="mt-4" variant="dark">
+      <Carousel  variant="dark">
         <Carousel.Item style={{ height: "34rem" }}>
           <img
             style={{ width: "100%" }}
@@ -35,6 +34,33 @@ export const Home = () => {
           </Carousel.Caption> */}
         </Carousel.Item>
         <Carousel.Item style={{ height: "34rem" }}>
+          <img
+            style={{ width: "100%" }}
+            //className="d-block mx-auto"
+            className="bd-placeholder-img shadowCard rounded-3"
+            src="img/carrusel/img-c-3.jpg"
+            alt="First slide"
+          />
+          {/* <Carousel.Caption style={{ color: "black" }}>
+            <h3>First slide label</h3>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </Carousel.Caption> */}
+        </Carousel.Item>
+        
+        <Carousel.Item style={{ height: "34rem" }}>
+          <img
+            style={{ width: "100%" }}
+            //className="d-block mx-auto"
+            className="bd-placeholder-img shadowCard rounded-3"
+            src="img/carrusel/img-c-4.jpg"
+            alt="First slide"
+          />
+          {/* <Carousel.Caption style={{ color: "black" }}>
+            <h3>First slide label</h3>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </Carousel.Caption> */}
+        </Carousel.Item>
+        <Carousel.Item style={{ height: "34rem" }}>
           <video controls preload="auto">
             <source src="img/carrusel/videos/video-c-1.mp4" />
           </video>
@@ -43,9 +69,9 @@ export const Home = () => {
 
       <Container>
         {/* informacion */}
-        <Row className="mt-2">
+        {/* <Row className="mt-2"> */}
           {/* Columa 1 */}
-          <Col lg={4} className="mb-3">
+          {/* <Col lg={4} className="mb-3">
             <Card border="primary" className="shadowCard">
               <Card.Body>
                 <Card.Title>
@@ -60,9 +86,9 @@ export const Home = () => {
                 </Card.Text>
               </Card.Body>
             </Card>
-          </Col>
+          </Col> */}
           {/* Columa 2 */}
-          <Col lg={4} className="mb-3">
+          {/* <Col lg={4} className="mb-3">
             <Card border="primary" className="shadowCard">
               <Card.Body>
                 <Card.Title>
@@ -75,9 +101,9 @@ export const Home = () => {
                 </Card.Text>
               </Card.Body>
             </Card>
-          </Col>
+          </Col> */}
           {/* Columa 3 */}
-          <Col lg={4} className="mb-3">
+          {/* <Col lg={4} className="mb-3">
             <Card border="primary" className="shadowCard">
               <Card.Body>
                 <Card.Title>
@@ -91,8 +117,8 @@ export const Home = () => {
                 </Card.Text>
               </Card.Body>
             </Card>
-          </Col>
-        </Row>
+          </Col> */}
+        {/* </Row> */}
 
         <hr className="featurette-divider" />
         <div className="row featurette">
@@ -111,7 +137,7 @@ export const Home = () => {
               className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
               width="500"
               height="500"
-              src="img/home4.jpg"
+              src="img/home6.jpeg"
             />
           </div>
         </div>
