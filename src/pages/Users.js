@@ -52,7 +52,7 @@ export const Users = () => {
 
   return (
     <PageTemplate>
-      <Container fluid>
+      <Container>
         <Row>
           <Col>
             <h2>Gestion de Usuarios</h2>
@@ -61,7 +61,7 @@ export const Users = () => {
               message={state.message}
               alertType={state.alertType}
             />
-            <Table>
+            <Table className="text-white">
               <thead>
                 <tr>
                   <th>Codigo </th>
@@ -96,6 +96,7 @@ export const Users = () => {
             />
           </Col>
         </Row>
+        <hr className="featurette-divider"></hr>
       </Container>
     </PageTemplate>
   );

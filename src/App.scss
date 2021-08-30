@@ -68,7 +68,7 @@ $primary: #559e3b;
 }
 .carousel-item > img {
   width: 100%;
-  //max-width: 60rem;
+  max-width: 92rem;
   height: 49rem;
 }
 
@@ -81,6 +81,10 @@ $primary: #559e3b;
 }
 
 h2{
+  color:$primary;
+}
+
+h4{
   color:$primary;
 }
 
@@ -157,4 +161,13 @@ a{
     border-radius: 10px;
   }
 
+  .carousel-item {
+    height: 25rem;
+  }
+
+  .carousel-item > img {
+    width: 100%;
+    max-width: 40rem;
+    height: 25rem;
+  }
 }

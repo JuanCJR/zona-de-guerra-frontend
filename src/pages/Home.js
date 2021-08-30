@@ -6,23 +6,8 @@ export const Home = () => {
     <PageTemplate>
       {/* Carrusel */}
       <Carousel  variant="dark">
-        <Carousel.Item style={{ height: "34rem" }}>
+        <Carousel.Item >
           <img
-            style={{ width: "100%" }}
-            //className="d-block mx-auto"
-            className="bd-placeholder-img shadowCard rounded-3"
-            src="img/carrusel/img-c-1.jpg"
-            alt="First slide"
-          />
-          {/* <Carousel.Caption style={{ color: "black" }}>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption> */}
-        </Carousel.Item>
-
-        <Carousel.Item style={{ height: "34rem" }}>
-          <img
-            style={{ width: "100%" }}
             //className="d-block mx-auto"
             className="bd-placeholder-img shadowCard rounded-3"
             src="img/carrusel/img-c-2.jpg"
@@ -33,9 +18,22 @@ export const Home = () => {
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </Carousel.Caption> */}
         </Carousel.Item>
-        <Carousel.Item style={{ height: "34rem" }}>
+
+        <Carousel.Item >
           <img
-            style={{ width: "100%" }}
+           
+            //className="d-block mx-auto"
+            className="bd-placeholder-img shadowCard rounded-3"
+            src="img/carrusel/img-c-1.jpg"
+            alt="First slide"
+          />
+          {/* <Carousel.Caption style={{ color: "black" }}>
+            <h3>First slide label</h3>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </Carousel.Caption> */}
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
             //className="d-block mx-auto"
             className="bd-placeholder-img shadowCard rounded-3"
             src="img/carrusel/img-c-3.jpg"
@@ -47,7 +45,7 @@ export const Home = () => {
           </Carousel.Caption> */}
         </Carousel.Item>
         
-        <Carousel.Item style={{ height: "34rem" }}>
+        <Carousel.Item >
           <img
             style={{ width: "100%" }}
             //className="d-block mx-auto"
@@ -60,7 +58,7 @@ export const Home = () => {
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </Carousel.Caption> */}
         </Carousel.Item>
-        <Carousel.Item style={{ height: "34rem" }}>
+        <Carousel.Item >
           <video controls preload="auto">
             <source src="img/carrusel/videos/video-c-1.mp4" />
           </video>

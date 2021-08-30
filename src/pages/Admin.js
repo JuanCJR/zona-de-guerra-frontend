@@ -54,9 +54,9 @@ export const Admin = () => {
   return (
     <PageTemplate>
       {sessionStorage.getItem("token") ? (
-        <Container fluid>
+        <Container>
           {/* Tarifas */}
-          <Row className="mt-2 justify-content-md-center">
+          <Row className="justify-content-md-center">
             <Col>
               <h2>Gestion de Reservas</h2>
 
@@ -66,7 +66,7 @@ export const Admin = () => {
                 alertType={state.alertType}
               />
 
-              <Table>
+              <Table className="text-white">
                 <thead>
                   <tr>
                     <th>Codigo Reserva</th>
@@ -100,6 +100,7 @@ export const Admin = () => {
               </Table>
             </Col>
           </Row>
+          <hr className="featurette-divider"></hr>
         </Container>
       ) : (
         <React.Fragment></React.Fragment>

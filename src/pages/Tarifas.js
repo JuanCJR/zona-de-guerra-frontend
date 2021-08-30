@@ -5,85 +5,43 @@ import { Container, Col, Row, Card } from "react-bootstrap";
 export const Tarifas = () => {
   return (
     <PageTemplate>
-      <Container fluid>
+      <Container >
         {/* Tarifas */}
-        <Row className="mt-2 justify-content-md-center">
-          {/* Columa 1 */}
-          <Col md="auto">
-            <Card style={{ width: "25rem" }} className="mt-3">
-              <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content. Some quick example text to
-                  build on the card title and make up the bulk of the card's
-                  content. Some quick example text to build on the card title
-                  and make up the bulk of the card's content.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          {/* Columa 2 */}
-          <Col md="auto">
-            <Card style={{ width: "25rem" }} className="mt-3">
-              <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content. Some quick example text to
-                  build on the card title and make up the bulk of the card's
-                  content. Some quick example text to build on the card title
-                  and make up the bulk of the card's content.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          {/* Columa 3 */}
-          <Col md="auto">
-            <Card style={{ width: "25rem" }} className="mt-3">
-              <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content. Some quick example text to
-                  build on the card title and make up the bulk of the card's
-                  content. Some quick example text to build on the card title
-                  and make up the bulk of the card's content.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          {/* Columa 4 */}
-          <Col md="auto">
-            <Card style={{ width: "25rem" }} className="mt-3">
-              <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content. Some quick example text to
-                  build on the card title and make up the bulk of the card's
-                  content. Some quick example text to build on the card title
-                  and make up the bulk of the card's content.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          {/* Columa 5 */}
-          <Col md="auto">
-            <Card style={{ width: "25rem" }} className="mt-3">
-              <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content. Some quick example text to
-                  build on the card title and make up the bulk of the card's
-                  content. Some quick example text to build on the card title
-                  and make up the bulk of the card's content.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-        </Row>
+          <div className="row featurette">
+          <div className="col-md-7">
+            <h2 className="featurette-heading text-start">
+              Tarifa del Servicio
+            </h2>
+            {/*<Card>
+            <Card.Header>
+                  <h4>Estandar</h4>
+                </Card.Header>
+              <Card.Body> */}
+            <p className="lead text-start mt-4">
+                <h1 className="card-title pricing-card-title">
+                    $9.000<small className="text-muted fw-light">/por persona</small>
+                </h1>
+                <ul className="list-unstyled mt-3 mb-4">
+                  <li>1 hora de juego</li>
+                  <li>100 balas</li>
+                  <li>Min. 8 personas</li>
+                  <li>Recarga $3.000<small className="text-muted fw-light">/100 balas</small></li>
+                </ul>
+                </p>
+
+              {/* </Card.Body>
+            </Card> */}
+          </div>
+          <div className="col-md-5">
+            <img
+              className="rounded-3 bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+              width="500"
+              height="500"
+              src="img/home6.jpeg"
+            />
+          </div>
+        </div>
+        <hr className="featurette-divider"></hr>
       </Container>
     </PageTemplate>
   );

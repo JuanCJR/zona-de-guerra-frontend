@@ -4,19 +4,17 @@ import { Container, Col, Row } from "react-bootstrap";
 export const Contacto = () => {
   return (
     <PageTemplate>
-      <Container fluid>
-        <Row className="mt-4 text-start">
+      <Container >
+        <Row className="text-start ">
           {/* Columna de info */}
           <Col sm={4}>
             <h4>Dirección</h4>
             <p>
-              Lorem ipsum dolor sit amet et delectus accommodare his consul
-              copiosae legendos at vix ad putent delectus delicata usu. Vidit
+            Estamos ubicados en: El Olivar 2665 Paradero 47 Av. Santa Rosa Entrada por la ferretería Pucoyam a 400mts.
             </p>
             <h4>Telefono</h4>
             <p>
-              Lorem ipsum dolor sit amet et delectus accommodare his consul
-              copiosae legendos at vix ad putent delectus delicata usu. Vidit
+              +56 9 
             </p>
           </Col>
 
@@ -33,6 +31,7 @@ export const Contacto = () => {
             ></iframe>
           </Col>
         </Row>
+        <hr className="featurette-divider"></hr>
       </Container>
     </PageTemplate>
   );

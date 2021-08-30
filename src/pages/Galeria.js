@@ -37,6 +37,7 @@ export const Galeria = () => {
             );
           })}
         </Row>
+        <hr className="featurette-divider"></hr>
       </Container>
     </PageTemplate>
   );

@@ -55,8 +55,8 @@ export const Reservar = () => {
     <PageTemplate>
 
 
-      <Container fluid>
-        <Row className="mt-4 text-start">
+      <Container>
+        <Row className="text-start">
           {/* Columna de insercion */}
           <Col sm={6}>
             <Card>
@@ -132,6 +132,7 @@ export const Reservar = () => {
             </Card>
           </Col>
         </Row>
+        <hr className="featurette-divider"></hr>
       </Container>
     </PageTemplate>
   );

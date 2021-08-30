@@ -115,6 +115,7 @@ export const Login = () => {
               </Card>
             </Col>
           </Row>
+        <hr className="featurette-divider"></hr>
         </Container>
       ) : (
         <React.Fragment></React.Fragment>

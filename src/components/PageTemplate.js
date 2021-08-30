@@ -52,7 +52,7 @@ export const PageTemplate = (props) => {
               src="img/banner.jpg"
               />
           </Navbar>
-          <Navbar expand="lg" bg="dark" variant="dark" className="" >
+          <Navbar expand="lg" bg="dark" variant="dark" >
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse>
               <Nav className="mx-auto media-item" >
@@ -89,7 +89,7 @@ export const PageTemplate = (props) => {
                   CONTACTO
                 </Nav.Link>
               </Nav>
-              <Nav className="ms-auto">
+              <Nav className="ms-auto media-item">
                 <Nav.Link>
                   <img
                     className="me-2"
@@ -112,13 +112,13 @@ export const PageTemplate = (props) => {
                 {state.isLoggedIn ? (
                   <>
                     <Nav.Link
-                      className="me-5 ms-5"
+                      className="ms-2"
                       onClick={() => handleClick("/usuarios")}
                     >
                       USUARIOS
                     </Nav.Link>
                     <Nav.Link
-                      className="me-5 ms-5"
+                      className="ms-2 me-2"
                       onClick={() => handleClick("/admin")}
                     >
                       RESERVAS
@@ -135,7 +135,7 @@ export const PageTemplate = (props) => {
                 <Navbar.Text style={{ fontSize: "0.8rem" }}>
                   USUARIO: {state.nom_usu}
                 </Navbar.Text>
-                <Button className="ms-3" onClick={onLogOut}>
+                <Button className="ms-3 text-white" onClick={onLogOut}>
                   SALIR
                 </Button>
               </Navbar.Collapse>
