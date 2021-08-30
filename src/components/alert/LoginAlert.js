@@ -18,7 +18,7 @@ export const LoginAlert = (props) => {
       return (
         <Alert variant="danger" onClose={() => setShow(false)}>
           <Alert.Heading>Credenciales Incorrectas</Alert.Heading>
-          <p>Las credenciales ingresadas no son correctas</p>
+          <p className="text-black">Las credenciales ingresadas no son correctas</p>
         </Alert>
       );
     } else {

@@ -1,8 +1,17 @@
 import React from "react-router-dom";
 import { PageTemplate } from "../components/PageTemplate";
-import { Container, Col, Row, Card } from "react-bootstrap";
+import { Container, Button } from "react-bootstrap";
+import { useHistory } from "react-router-dom";
 
 export const Tarifas = () => {
+
+  let history = useHistory();
+
+  const handleClick = (route) => {
+    history.push(route);
+  };
+
+
   return (
     <PageTemplate>
       <Container >
@@ -27,6 +36,7 @@ export const Tarifas = () => {
                   <li>Min. 8 personas</li>
                   <li>Recarga $3.000<small className="text-muted fw-light">/100 balas</small></li>
                 </ul>
+                <Button className="w-100 text-white" onClick={()=>handleClick("/reservar")}>Reservar</Button>
                 </p>
 
               {/* </Card.Body>

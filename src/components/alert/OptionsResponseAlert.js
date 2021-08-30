@@ -19,9 +19,9 @@ export const OptionsResponseAlert = (props) => {
     if (code === 200) {
       if (alertType === "update" || alertType==="create" || alertType==="delete") {
         return (
-          <Alert variant="success" onClose={() => setShow(false)} dismissible>
+          <Alert   variant="primary" onClose={() => setShow(false)} dismissible>
             <Alert.Heading>Ejecución exitosa!</Alert.Heading>
-            <p>{message}</p>
+            <p className="text-black">{message}</p>
           </Alert>
         );
       } 
@@ -31,7 +31,7 @@ export const OptionsResponseAlert = (props) => {
           <Alert.Heading>
             Error! No se ha ejecutado la accion correctamente.
           </Alert.Heading>
-          <p>{message}</p>
+          <p className="text-black">{message}</p>
         </Alert>
       );
     }

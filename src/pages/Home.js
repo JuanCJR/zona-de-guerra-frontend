@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Col, Row, Carousel, Card, Image } from "react-bootstrap";
+import { Container,Carousel } from "react-bootstrap";
 import { PageTemplate } from "../components/PageTemplate";
 export const Home = () => {
   return (

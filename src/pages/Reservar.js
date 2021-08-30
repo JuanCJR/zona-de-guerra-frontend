@@ -59,7 +59,7 @@ export const Reservar = () => {
         <Row className="text-start">
           {/* Columna de insercion */}
           <Col sm={6}>
-            <Card>
+            <Card bg="dark">
               <Card.Body>
                 <Form noValidate validated={validated} onSubmit={handleSubmit}>
                   <h4>Nueva reserva</h4>
@@ -116,7 +116,7 @@ export const Reservar = () => {
 
           {/* Columna de datos */}
           <Col sm={6}>
-            <Card>
+            <Card  bg="dark">
               <Card.Body>
               <h4>Detalle de reserva</h4>
                 {postState.code === 200 ? <React.Fragment>

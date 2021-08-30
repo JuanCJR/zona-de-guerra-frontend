@@ -19,16 +19,16 @@ export const CreateReservaAlert = (props) => {
     if (show) {
         if (code === 200) {
             return (
-                <Alert variant="success" onClose={() => history.push('/')} dismissible>
+                <Alert className="text-primary" variant="success" onClose={() => history.push('/')} dismissible>
                     <Alert.Heading>Reserva creada con exito!</Alert.Heading>
-                    <p>Su reserva se a realizado con exito</p>
+                    <p className="text-black">Su reserva se a realizado con exito</p>
                 </Alert>
             )
         } else {
             return (
-                <Alert variant="danger" onClose={() => setShow(false)} dismissible>
+                <Alert className="text-primary" variant="danger" onClose={() => setShow(false)} dismissible>
                     <Alert.Heading>Error! La reserva no fue creada.</Alert.Heading>
-                    <p>{message}</p>
+                    <p className="text-black">{message}</p>
                 </Alert>
             )
         }
