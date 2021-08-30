@@ -1,15 +1,39 @@
-$theme-colors:(
-  "primary":#559E3B,
-  "secondary":#8ADE43,
-  "success":#BDF556,
-  "danger":#C5DE43,
-  "warning":#FAF94B,
-  "info":#eee
-  
+$theme-colors: (
+  "primary": #559e3b,
+  "secondary": #8ade43,
+  "success": #bdf556,
+  "danger": #c5de43,
+  "warning": #faf94b,
+  "info": #eee,
 );
 
+$font-family-sans-serif:
+  // Safari for OS X and iOS (San Francisco)
+  -apple-system,
+  // Chrome < 56 for OS X (San Francisco)
+  BlinkMacSystemFont,
+  // Windows
+  "Segoe UI",
+  // Android
+  "Roboto",
+  // Basic web fallback
+  "Helvetica Neue",
+  Arial, sans-serif,
+  // Emoji fonts
+  "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$navbar-dark-color: white;
+$navbar-dark-hover-color: #8ade43;
+$navbar-dark-active-color: #559e3b;
+$navbar-dark-brand-color: $navbar-dark-active-color;
+$navbar-dark-brand-hover-color: $navbar-dark-active-color;
+@import "~bootstrap/scss/bootstrap";
 
-@import "node_modules/bootstrap/scss/bootstrap";
+$primary: #559e3b;
+
+.main-bg{
+  background-color: #212529;
+}
 .App {
   text-align: center;
 }
@@ -29,13 +53,13 @@ $theme-colors:(
   color: #61dafb;
 }
 
-.banner{
+.banner {
   top: 0;
   left: 0;
-  height: 10rem;
-  width: 80%;
-  max-width: 70rem;
-  border-radius:10px;
+  height: 15rem;
+  width: 100%;
+  //max-width: 70rem;
+  border-radius: 10px;
 }
 
 /* Declare heights because of positioning of img element */
@@ -43,9 +67,9 @@ $theme-colors:(
   height: 32rem;
 }
 .carousel-item > img {
-  width: 80%;
-  max-width: 60rem;
-  height: 32rem;
+  width: 100%;
+  //max-width: 60rem;
+  height: 49rem;
 }
 
 .carousel-item > video {
@@ -55,11 +79,24 @@ $theme-colors:(
   min-width: 100%;
   height: 32rem;
 }
+
+h2{
+  color:$primary;
+}
+
+p{
+  color: #fff;
+}
 /* Featurettes
 ------------------------- */
+a{
+  color:$primary;
+
+}
 
 .featurette-divider {
   margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  background-color: $primary;
 }
 
 /* Thin out the marketing headings */
@@ -67,13 +104,24 @@ $theme-colors:(
   font-weight: 300;
   line-height: 1;
   /* rtl:remove */
-  letter-spacing: -.05rem;
+  letter-spacing: -0.05rem;
 }
 
 .shadowCard {
   box-shadow: 0 7px 14px 0 rgba(59, 65, 94, 0.1),
     0 3px 6px 0 rgba(0, 0, 0, 0.07);
   /* border-top-right-radius: 0.375rem; */
+}
+
+.media-item a {
+  line-height: 1.5;
+  font-weight: 900;
+}
+
+.media-item a:hover {
+  border-bottom-color: #8ade43;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
 }
 
 /* RESPONSIVE CSS
@@ -96,4 +144,17 @@ $theme-colors:(
   .featurette-heading {
     margin-top: 7rem;
   }
+}
+
+@media (max-width: 500px) {
+
+  .banner {
+    top: 0;
+    left: 0;
+    height: 10rem;
+    width: 100%;
+    //max-width: 70rem;
+    border-radius: 10px;
+  }
+
 }

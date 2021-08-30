@@ -46,45 +46,47 @@ export const PageTemplate = (props) => {
       {/** Header */}
       <header>
         <Container fluid className="p-0">
-          <Navbar expand="lg" className="bg-dark  text-white">
+          <Navbar expand="lg" className="bg-dark ">
               <img
               className="banner mx-auto"
               src="img/banner.jpg"
               />
           </Navbar>
-          <Navbar expand="lg" bg="primary" variant="dark" className="bg-gradient" >
+          <Navbar expand="lg" bg="dark" variant="dark" className="" >
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse>
-              <Nav className="mx-auto">
+              <Nav className="mx-auto media-item" >
                 <Nav.Link
                   className="me-5 ms-5"
+                  
                   onClick={() => handleClick("/")}
                 >
-                  Inicio
+                  INICIO
                 </Nav.Link>
+                
                 <Nav.Link
                   className="me-5 ms-5"
                   onClick={() => handleClick("/tarifas")}
                 >
-                  Tarifas
+                  TARIFAS
                 </Nav.Link>
                 <Nav.Link
                   className="me-5 ms-5"
                   onClick={() => handleClick("/galeria")}
                 >
-                  Galeria
+                  GALERIA
                 </Nav.Link>
                 <Nav.Link
                   className="me-5 ms-5"
                   onClick={() => handleClick("/reservar")}
                 >
-                  Reservar
+                  RESERVAR
                 </Nav.Link>
                 <Nav.Link
                   className="me-5 ms-5"
                   onClick={() => handleClick("/contacto")}
                 >
-                  Contacto
+                  CONTACTO
                 </Nav.Link>
               </Nav>
               <Nav className="ms-auto">
@@ -113,13 +115,13 @@ export const PageTemplate = (props) => {
                       className="me-5 ms-5"
                       onClick={() => handleClick("/usuarios")}
                     >
-                      Usuarios
+                      USUARIOS
                     </Nav.Link>
                     <Nav.Link
                       className="me-5 ms-5"
                       onClick={() => handleClick("/admin")}
                     >
-                      Reservas
+                      RESERVAS
                     </Nav.Link>
                   </>
                 ) : (
@@ -131,10 +133,10 @@ export const PageTemplate = (props) => {
             {state.isLoggedIn ? (
               <Navbar.Collapse>
                 <Navbar.Text style={{ fontSize: "0.8rem" }}>
-                  Usuario: {state.nom_usu}
+                  USUARIO: {state.nom_usu}
                 </Navbar.Text>
                 <Button className="ms-3" onClick={onLogOut}>
-                  Salir
+                  SALIR
                 </Button>
               </Navbar.Collapse>
             ) : (
@@ -144,7 +146,7 @@ export const PageTemplate = (props) => {
         </Container>
       </header>
       {/** Main */}
-      <main>{props.children}</main>
+      <main className="main-bg" >{props.children}</main>
       {/** Footer */}
       {/* <footer className="text-muted text-start mt-5 footer">
         <Container>
@@ -166,11 +168,11 @@ export const PageTemplate = (props) => {
           </p>
         </Container>
       </footer> */}
-      <footer class="container">
-        <p class="float-end">
+      <footer class="container" >
+        <p class="float-end" > 
           <a href="#">Ir al inicio</a>
         </p>
-        <p>
+        <p style={{color:"black"}}>
           © 2021 Zona de Guerra Paintball · 
         </p>
       </footer>
