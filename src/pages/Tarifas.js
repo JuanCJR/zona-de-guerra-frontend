@@ -18,7 +18,8 @@ export const Tarifas = () => {
         {/* Tarifas */}
           <div className="row featurette">
           <div className="col-md-7">
-            <h2 className="featurette-heading text-start">
+            <h2 className="featurette-heading text-start" 
+            style={{fontWeight:"900",lineHeight:"1.5"}}>
               Tarifa del Servicio
             </h2>
             {/*<Card>

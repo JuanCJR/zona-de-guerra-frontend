@@ -49,6 +49,13 @@ $primary: #559e3b;
   color: white;
 }
 
+
+.custom-button {
+  line-height: 1.5;
+  font-weight: 900;
+  color: white;
+}
+
 .App-link {
   color: #61dafb;
 }
@@ -80,11 +87,20 @@ $primary: #559e3b;
   height: 32rem;
 }
 
+h1{
+  line-height: 1.5;
+  font-weight: 900;
+}
+
 h2{
+  line-height: 1.5;
+  font-weight: 900;
   color:$primary;
 }
 
 h4{
+  line-height: 1.5;
+  font-weight: 900;
   color:$primary;
 }
 

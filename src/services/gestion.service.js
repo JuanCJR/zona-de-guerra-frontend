@@ -17,7 +17,21 @@ export const getHorasDisponibles = async (fec_reserva) => {
 
 //funcion para crear reserva
 export const postReserva = async (postData) => {
-  const result = await axios.post(`${getRoute("crea-reserva")}`, postData);
+  const formData = new FormData();
+  const keyArray = Object.keys(postData.reserva);
+
+  keyArray.forEach((k) => {
+    formData.append(k, postData.reserva[k]);
+  });
+  const result = await axios({
+    method: "post",
+    url: getRoute("crea-reserva"),
+    headers: {
+      "Content-Type": "multipart/form-data",
+    },
+    data: formData ,
+  });
+
   return result.data;
 };
 

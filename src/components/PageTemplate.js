@@ -90,14 +90,14 @@ export const PageTemplate = (props) => {
                 </Nav.Link>
               </Nav>
               <Nav className="ms-auto media-item">
-                <Nav.Link>
+                {/* <Nav.Link>
                   <img
                     className="me-2"
                     width="30"
                     src="img/facebook.png"
                     alt="facebook icon"
                   />
-                </Nav.Link>
+                </Nav.Link> */}
                 <Nav.Link
                   href="https://www.instagram.com/guerrapaintballjm/?hl=es"
                   target="_blank"
